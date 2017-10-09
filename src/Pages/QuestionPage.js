@@ -34,6 +34,14 @@ const CardRounded = styled.div.attrs({
   width: 100%;
   margin: 0 auto;
   box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+
+  @media (min-width: 701px) {
+    width: 80%;
+  }
+
+  @media (min-width: 955px) {
+    width: 50%;
+  }
 `
 
 

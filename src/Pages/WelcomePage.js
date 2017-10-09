@@ -6,6 +6,23 @@ import _var from '../Include/_var';
 import QuestionPage from './QuestionPage';
 
 
+// Media Queries
+// const sizes = {
+//   desktop: 992,
+//   tablet: 768
+// }
+
+// const media = Object.keys(sizes).reduce((acc, label) => {
+//   acc[label] = (...args) => css`
+//     @media (max-width: ${sizes[label] / 16}em) 
+//     {
+//       ${css(...args)}
+//     }
+//   `
+//   return acc
+// }, {})
+
+
 
 const ContainerWrap = styled.div.attrs({
   className: 'container'
@@ -38,17 +55,37 @@ const CardRounded = styled.div.attrs({
   right: 0;
   margin: auto;
   box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+
+  @media (min-width: 701px) {
+    width: 60%;
+  }
 `
 
 const RulesWrapper = styled.div.attrs({
   className: 'rules_wrapper'
 })`
   margin-top: 1rem;
+
     li {
       font-family: ${_var.$mainFont};
       font-size: 1.2rem;
       padding-top: 1rem;
     }
+
+  @media (min-width: 501px) {
+    margin-top: 2.5rem;
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+      text-align: center;
+
+      li {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+      }
+    }
+  }
 `
 
 // start button
