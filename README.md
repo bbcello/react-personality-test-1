@@ -1,6 +1,6 @@
 # React Quiz
 
-[View demo](http://mitchgavan.github.io/react-multi-choice-quiz/)
+[View demo](https://irfanabliz.github.io/react-personality-test)
 
 Created with [Create React App](https://github.com/facebookincubator/create-react-app)
 
