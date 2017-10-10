@@ -44,15 +44,24 @@ const CardRounded = styled.div.attrs({
   }
 `
 
+const NextBtn = styled.i.attrs({
+  className: 'fa fa-arrow-right',
+})`
+  color: ${_var.$teal800};
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-size: 1.3rem;
+  cursor: pointer;
+`
+
 
 // ===========================================================================================
 // Class Question Page
 // ===========================================================================================
 class QuestionPage extends Component {
-
   constructor(props) {
     super(props);
-    // define initial state in the constructor function
     this.state = {
       counter: 0,
       questionId: 1,
@@ -82,10 +91,11 @@ class QuestionPage extends Component {
       resultBriggs: '',
       resultColors: '',
       resultLetters: '',
-      hideComponent: false
+      // showNextButton: false,
     };
 
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
+    this._onNextBtnClick = this._onNextBtnClick.bind(this);
   } // end - constructor()
 
   // populate app’s state using the componentWillMount life cycle event
@@ -93,25 +103,32 @@ class QuestionPage extends Component {
     const answerOptions = quizQuestions.map((question) => question.answers);
     this.setState({
       question: quizQuestions[0].question,
-      answerOptions: answerOptions[0]
+      answerOptions: answerOptions[0],
+      showNextButton: false,
     });
   } // end - componentWillMount()
 
   // Setting the answer based on the user’s selection
   setUserAnswer(answer) {
     const answersCount = this.state.answersCount;
+
     let applyAnswer = (answer) => {
       const answer_array = answer.split(',');
       let briggsAnswer = answer_array[0];
       let colorsAnswer = answer_array[1];
       let lettersAnswer = answer_array[2];
-      if (answer !== ' ') {
+      if (answer_array.length === 3) {
         answersCount['Briggs'][briggsAnswer] += 1;
         answersCount['Colors'][colorsAnswer] += 1;
         answersCount['Letters'][lettersAnswer] += 1;
+      } else if (answer_array.length === 4) {
+        answersCount['Briggs'][briggsAnswer] -= 1;
+        answersCount['Colors'][colorsAnswer] -= 1;
+        answersCount['Letters'][lettersAnswer] -= 1;
       }
       return answersCount;
     }
+
     this.setState({
       answersCount: applyAnswer(answer),
       answer: answer
@@ -131,17 +148,32 @@ class QuestionPage extends Component {
     });
   } // setNextQuestion()
 
+  _onNextBtnClick() {
+    if (this.state.questionId < quizQuestions.length) {
+      setTimeout(() => this.setNextQuestion(), 800);
+    } else {
+      setTimeout(() => this.setBriggsResults(this.getBriggsResults()), 800);
+      setTimeout(() => this.setColorsResults(this.getColorsResults()), 800);
+      setTimeout(() => this.setLettersResults(this.getLettersResults()), 800);
+    }
+    this.setState({
+      showNextButton: false,
+    })
+  }
+
+  // show next button only when answer is selected
+  setNextButton() {
+    this.setState({
+      showNextButton: true
+    });
+  }
+
   // setting the answer and then setting the next question
   handleAnswerSelected(event) {
     this.setUserAnswer(event.currentTarget.value);
-    if (this.state.questionId < quizQuestions.length) {
-        setTimeout(() => this.setNextQuestion(), 800);
-      } else {
-        setTimeout(() => this.setBriggsResults(this.getBriggsResults()), 800);
-        setTimeout(() => this.setColorsResults(this.getColorsResults(), 800));
-        setTimeout(() => this.setLettersResults(this.getLettersResults(), 800));
-      }
+    setTimeout(() => this.setNextButton(), 500);
   } // handleAnswerSelected()
+
 
   // ===========================================================================================
   // Get Results
@@ -177,6 +209,7 @@ class QuestionPage extends Component {
     return answersCountKeysLetters.filter((key) => lettersAnswer[key] === maxAnswerCountLetters);
   }
 
+
   // ===========================================================================================
   // Set Results
   // ===========================================================================================
@@ -201,6 +234,7 @@ class QuestionPage extends Component {
       this.setState({resultLetters: resultLetters[0]});
     }
   }
+
 
   // ===========================================================================================
   // Render methods
@@ -236,6 +270,7 @@ class QuestionPage extends Component {
     return (
       <ContainerWrap>
         <CardRounded>
+          {this.state.showNextButton ? <NextBtn onClick={this._onNextBtnClick}/> : null}
           {this.state.resultBriggs 
           && this.state.resultColors
           && this.state.resultLetters ? this.renderResult() : this.renderQuiz()}

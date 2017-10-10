@@ -12,7 +12,11 @@ var quizQuestions = [
         content: "Yep"
       },
       {
-        type: " ",
+        type: "  ",
+        content: "Don't know"
+      },
+      {
+        type: "JP,Brown,D,No",
         content: "Nah"
       }
     ]

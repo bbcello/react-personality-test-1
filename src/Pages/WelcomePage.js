@@ -6,24 +6,6 @@ import _var from '../Include/_var';
 import QuestionPage from './QuestionPage';
 
 
-// Media Queries
-// const sizes = {
-//   desktop: 992,
-//   tablet: 768
-// }
-
-// const media = Object.keys(sizes).reduce((acc, label) => {
-//   acc[label] = (...args) => css`
-//     @media (max-width: ${sizes[label] / 16}em) 
-//     {
-//       ${css(...args)}
-//     }
-//   `
-//   return acc
-// }, {})
-
-
-
 const ContainerWrap = styled.div.attrs({
   className: 'container'
 })`
@@ -179,8 +161,9 @@ const RulesList = props => {
 
 const rules = [
   'Consist of 40 questions.',
-  'Take less than 10 minutes.',
-  'Answer honestly.'
+  'Answer honestly.',
+  'Just select Yes or No',
+  'Try not to select don`t know'
 ]
 
 class WelcomePage extends Component {
