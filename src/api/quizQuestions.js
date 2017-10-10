@@ -12,8 +12,8 @@ var quizQuestions = [
         content: "Yep"
       },
       {
-        type: "  ",
-        content: "Don't know"
+        type: " ",
+        content: "Don't Know"
       },
       {
         type: "JP,Brown,D,No",
@@ -32,6 +32,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "SN,Green,C,No",
         content: "Nah"
       }
     ]
@@ -47,6 +51,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "SN,Red,A,No",
         content: "Nah"
       }
     ]
@@ -62,6 +70,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "JP,Brown,D,No",
         content: "Nah"
       }
     ]
@@ -77,6 +89,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "TF,Brown,C,No",
         content: "Nah"
       }
     ]
@@ -92,6 +108,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "EI,Green,C,No",
         content: "Nah"
       }
     ]
@@ -107,6 +127,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "EI,Blue,B,No",
         content: "Nah"
       }
     ]
@@ -122,6 +146,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "EI,Blue,B,No",
         content: "Nah"
       }
     ]
@@ -137,6 +165,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "TF,Blue,B,No",
         content: "Nah"
       }
     ]
@@ -152,6 +184,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "JP,Red,A,No",
         content: "Nah"
       }
     ]
@@ -167,6 +203,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "JP,Red,A,No",
         content: "Nah"
       }
     ]
@@ -182,6 +222,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "SN,Brown,C,No",
         content: "Nah"
       }
     ]
@@ -197,6 +241,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "TF,Green,C,No",
         content: "Nah"
       }
     ]
@@ -212,6 +260,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "TF,Blue,B,No",
         content: "Nah"
       }
     ]
@@ -227,6 +279,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "SN,Brown,D,No",
         content: "Nah"
       }
     ]
@@ -242,6 +298,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "JP,Red,A,No",
         content: "Nah"
       }
     ]
@@ -257,6 +317,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "JP,Red,A,No",
         content: "Nah"
       }
     ]
@@ -272,6 +336,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "JP,Green,D,No",
         content: "Nah"
       }
     ]
@@ -287,6 +355,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "EI,Blue,B,No",
         content: "Nah"
       }
     ]
@@ -302,6 +374,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "EI,Blue,B,No",
         content: "Nah"
       }
     ]
@@ -317,6 +393,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "SN,Brown,A,No",
         content: "Nah"
       }
     ]
@@ -332,6 +412,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "SN,Brown,A,No",
         content: "Nah"
       }
     ]
@@ -347,6 +431,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "EI,Green,D,No",
         content: "Nah"
       }
     ]
@@ -362,6 +450,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "EI,Green,C,No",
         content: "Nah"
       }
     ]
@@ -377,6 +469,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "TF,Blue,B,No",
         content: "Nah"
       }
     ]
@@ -392,6 +488,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "SN,Red,A,No",
         content: "Nah"
       }
     ]
@@ -407,6 +507,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "TF,Green,D,No",
         content: "Nah"
       }
     ]
@@ -422,6 +526,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "SN,Red,A,No",
         content: "Nah"
       }
     ]
@@ -437,6 +545,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "JP,Brown,D,No",
         content: "Nah"
       }
     ]
@@ -452,6 +564,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "TF,Blue,B,No",
         content: "Nah"
       }
     ]
@@ -467,6 +583,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "TF,Brown,C,No",
         content: "Nah"
       }
     ]
@@ -482,6 +602,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "EI,Green,C,No",
         content: "Nah"
       }
     ]
@@ -497,6 +621,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "EI,Red,B,No",
         content: "Nah"
       }
     ]
@@ -512,6 +640,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "SN,Green,C,No",
         content: "Nah"
       }
     ]
@@ -527,6 +659,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "JP,Red,D,No",
         content: "Nah"
       }
     ]
@@ -542,6 +678,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "TF,Red,A,No",
         content: "Nah"
       }
     ]
@@ -557,6 +697,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "SN,Blue,D,No",
         content: "Nah"
       }
     ]
@@ -572,6 +716,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "TF,Blue,B,No",
         content: "Nah"
       }
     ]
@@ -587,6 +735,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "EI,Green,C,No",
         content: "Nah"
       }
     ]
@@ -602,6 +754,10 @@ var quizQuestions = [
       },
       {
         type: " ",
+        content: "Don't Know"
+      },
+      {
+        type: "JP,Brown,D,No",
         content: "Nah"
       }
     ]

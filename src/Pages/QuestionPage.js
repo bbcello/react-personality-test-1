@@ -44,17 +44,6 @@ const CardRounded = styled.div.attrs({
   }
 `
 
-const NextBtn = styled.i.attrs({
-  className: 'fa fa-arrow-right',
-})`
-  color: ${_var.$teal800};
-  position: absolute;
-  right: 5%;
-  top: 5%;
-  font-size: 1.3rem;
-  cursor: pointer;
-`
-
 
 // ===========================================================================================
 // Class Question Page
@@ -70,22 +59,22 @@ class QuestionPage extends Component {
       answer: '',
       answersCount: {
         Colors: {
-          Green: 0,
-          Brown: 0,
-          Blue: 0,
-          Red: 0
+          Green: 10,
+          Brown: 10,
+          Blue: 10,
+          Red: 10
         },
         Letters: {
-          A: 0,
-          B: 0,
-          C: 0,
-          D: 0,
+          A: 10,
+          B: 10,
+          C: 10,
+          D: 10
         },
         Briggs: {
-          EI: 0,
-          SN: 0,
-          TF: 0,
-          JP: 0
+          EI: 10,
+          SN: 10,
+          TF: 10,
+          JP: 10
         }
       },
       resultBriggs: '',
@@ -95,7 +84,6 @@ class QuestionPage extends Component {
     };
 
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
-    this._onNextBtnClick = this._onNextBtnClick.bind(this);
   } // end - constructor()
 
   // populate app’s state using the componentWillMount life cycle event
@@ -103,15 +91,13 @@ class QuestionPage extends Component {
     const answerOptions = quizQuestions.map((question) => question.answers);
     this.setState({
       question: quizQuestions[0].question,
-      answerOptions: answerOptions[0],
-      showNextButton: false,
+      answerOptions: answerOptions[0]
     });
   } // end - componentWillMount()
 
   // Setting the answer based on the user’s selection
   setUserAnswer(answer) {
     const answersCount = this.state.answersCount;
-
     let applyAnswer = (answer) => {
       const answer_array = answer.split(',');
       let briggsAnswer = answer_array[0];
@@ -128,7 +114,6 @@ class QuestionPage extends Component {
       }
       return answersCount;
     }
-
     this.setState({
       answersCount: applyAnswer(answer),
       answer: answer
@@ -148,7 +133,9 @@ class QuestionPage extends Component {
     });
   } // setNextQuestion()
 
-  _onNextBtnClick() {
+  // setting the answer and then setting the next question
+  handleAnswerSelected(event) {
+    this.setUserAnswer(event.currentTarget.value);
     if (this.state.questionId < quizQuestions.length) {
       setTimeout(() => this.setNextQuestion(), 800);
     } else {
@@ -156,22 +143,6 @@ class QuestionPage extends Component {
       setTimeout(() => this.setColorsResults(this.getColorsResults()), 800);
       setTimeout(() => this.setLettersResults(this.getLettersResults()), 800);
     }
-    this.setState({
-      showNextButton: false,
-    })
-  }
-
-  // show next button only when answer is selected
-  setNextButton() {
-    this.setState({
-      showNextButton: true
-    });
-  }
-
-  // setting the answer and then setting the next question
-  handleAnswerSelected(event) {
-    this.setUserAnswer(event.currentTarget.value);
-    setTimeout(() => this.setNextButton(), 500);
   } // handleAnswerSelected()
 
 
@@ -270,7 +241,6 @@ class QuestionPage extends Component {
     return (
       <ContainerWrap>
         <CardRounded>
-          {this.state.showNextButton ? <NextBtn onClick={this._onNextBtnClick}/> : null}
           {this.state.resultBriggs 
           && this.state.resultColors
           && this.state.resultLetters ? this.renderResult() : this.renderQuiz()}
