@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import _var from '../Include/_var';
 
 
-import QuestionPage from './QuestionPage';
-
-
+// ===========================================================================================
+// Styles
+// ===========================================================================================
 const ContainerWrap = styled.div.attrs({
-  className: 'container'
+  className: 'container intro'
 })`
   position: fixed;
   min-height: 100%;
@@ -43,35 +43,7 @@ const CardRounded = styled.div.attrs({
   }
 `
 
-const RulesWrapper = styled.div.attrs({
-  className: 'rules_wrapper'
-})`
-  margin-top: 1rem;
-
-    li {
-      font-family: ${_var.$mainFont};
-      font-size: 1.2rem;
-      padding-top: 1rem;
-    }
-
-  @media (min-width: 501px) {
-    margin-top: 2.5rem;
-
-    ul {
-      padding: 0;
-      list-style-type: none;
-      text-align: center;
-
-      li {
-        font-size: 1.5rem;
-        padding-top: 1rem;
-      }
-    }
-  }
-`
-
-// start button
-const Button = styled.div.attrs({
+const StartBtn = styled.div.attrs({
   className: 'button animated infinite pulse'
 })`
   display: block;
@@ -147,61 +119,26 @@ const Button = styled.div.attrs({
   }
 `
 
-const RulesList = props => {
-  const rules = props.rules;
-  const listRules = rules.map((rule) => 
-    <li key={rule.toString()}>
-      {rule}
-    </li>
-  );
+
+// ===========================================================================================
+// Main
+// ===========================================================================================
+const Intro = ({title, _onStartClick}) => {
   return (
-    <ul>{listRules}</ul>
+    <ContainerWrap>
+      <CardRounded>
+        <Title>
+          {title}
+        </Title>
+        <StartBtn onClick={() => _onStartClick()}>
+          <span>Start</span>
+          <div className="icon">
+            <i className="fa fa-check"></i>
+          </div>
+        </StartBtn>
+      </CardRounded>
+    </ContainerWrap>
   );
 }
 
-const rules = [
-  'Consist of 40 questions.',
-  'Answer honestly.',
-  'Just select Yes or No',
-  'Try not to select don`t know'
-]
-
-class WelcomePage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showComponent: false,
-    };
-    this._onButtonClick = this._onButtonClick.bind(this);
-  }
-
-  _onButtonClick() {
-    this.setState({
-      showComponent: true,
-    });
-  }
-  
-  render() {
-    return (
-      <div>
-        <ContainerWrap>
-          <CardRounded>
-            <Title>Welcome to Personality Test</Title>
-            <RulesWrapper>
-              <RulesList rules={rules} />
-            </RulesWrapper>
-            <Button onClick={this._onButtonClick}>
-              <span>Start</span>
-              <div className="icon">
-                <i className="fa fa-check"></i>
-              </div>
-            </Button>
-          </CardRounded>
-        </ContainerWrap>
-        {this.state.showComponent ? <QuestionPage /> : null}
-      </div>
-    );
-  }
-}
-
-export default WelcomePage;
+export default Intro;

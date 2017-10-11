@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import _var from '../../Include/_var';
@@ -28,7 +28,7 @@ const QuestionTitle = styled.h1.attrs({
 
 
 
-const Question = (props) => {
+const Question = props => {
   return (
     <Row>
       <Col>

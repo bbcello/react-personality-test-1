@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import anime from 'animejs';
+
 import _var from '../Include/_var';
 
 // Components
@@ -16,7 +18,7 @@ import quizQuestions from '../api/quizQuestions';
 // Styles
 // ===========================================================================================
 const ContainerWrap = styled.div.attrs({
-  className: 'container'
+  className: 'container questionPage'
 })`
   position: fixed;
   min-height: 100%;
@@ -80,10 +82,9 @@ class QuestionPage extends Component {
       resultBriggs: '',
       resultColors: '',
       resultLetters: '',
-      // showNextButton: false,
     };
-
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
+
   } // end - constructor()
 
   // populate app’s state using the componentWillMount life cycle event
@@ -94,6 +95,16 @@ class QuestionPage extends Component {
       answerOptions: answerOptions[0]
     });
   } // end - componentWillMount()
+
+  animateIn() {
+    anime({
+      targets: '.questionPage .card',
+      translateX: 100,
+      elasticity: function(el, i, l) {
+        return (200 + i * 200);
+      }
+    })
+  }
 
   // Setting the answer based on the user’s selection
   setUserAnswer(answer) {
