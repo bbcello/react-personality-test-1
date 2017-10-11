@@ -4,19 +4,22 @@ import styled from 'styled-components';
 import _var from '../../Include/_var';
 
 
+const Col = styled.div.attrs({
+  className: 'question col'
+})`
+  padding: 1rem 0;
+`
+
 const AnswerOptionLi = styled.li.attrs({
   className: 'answerOption'
 })`
   list-style-type: none;
-  &:nth-of-type(1) {
-    transform: translateX(-1rem);
-  }
 `
 
 const Label = styled.label`
   position: relative;
   padding-left: 3rem;
-  line-height: 2rem;
+  line-height: 2.3rem;
   cursor: pointer;
   font-family: ${_var.$mainFont};
 
@@ -65,7 +68,7 @@ const Input = styled.input.attrs({
 `
 
 
-function AnswerOption(props) {
+const AnswerOption = props => {
   return (
     <AnswerOptionLi>
       <Input

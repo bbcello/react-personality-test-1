@@ -20,25 +20,10 @@ class App extends Component {
   }
 
   animateOut() {
-    var relativeOffset = anime.timeline();
-    relativeOffset
-      .add({
-        targets: '.title',
-        translateX: '150%',
-        easing: 'easeOutExpo',
-      })
-      .add({
-        targets: '.intro .button',
-        translateX: '100%',
-        easing: 'easeOutExpo',
-        offset: '-=600'
-      })
-      .add({
-        targets: '.intro .card',
-        translateX: '150%',
-        easing: 'easeOutExpo',
-        offset: '-=1000'
-      })
+    setTimeout(() => anime({
+      targets: '.intro .card',
+      translateX: '150%',
+      elasticity: function(el, i, l) {return (200 + i * 200);}}), 200);
   }
 
   // render Intro component

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import anime from 'animejs';
-
 import _var from '../Include/_var';
 
 // Components
@@ -95,16 +93,6 @@ class QuestionPage extends Component {
       answerOptions: answerOptions[0]
     });
   } // end - componentWillMount()
-
-  animateIn() {
-    anime({
-      targets: '.questionPage .card',
-      translateX: 100,
-      elasticity: function(el, i, l) {
-        return (200 + i * 200);
-      }
-    })
-  }
 
   // Setting the answer based on the user’s selection
   setUserAnswer(answer) {

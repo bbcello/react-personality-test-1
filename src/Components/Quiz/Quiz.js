@@ -26,8 +26,9 @@ const AnswerOptionUl = styled.ul.attrs({
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
   flex-grow: 1;
 `
 
