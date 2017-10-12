@@ -15,17 +15,6 @@ const ContainerWrap = styled.div.attrs({
   background-color: ${_var.$blackBg};
 `
 
-const Title = styled.h1.attrs({
-  className: 'title'
-})`
-  position: relative;
-  font-family: ${_var.$titleFont};
-  font-size: 1.1rem;
-  color: ${_var.$red800};
-  text-align: center;
-  padding-top: 2rem;
-`
-
 const CardRounded = styled.div.attrs({
   className: 'card rounded'
 })`
@@ -41,6 +30,17 @@ const CardRounded = styled.div.attrs({
   @media (min-width: 701px) {
     width: 60%;
   }
+`
+
+const Title = styled.h1.attrs({
+  className: 'title'
+})`
+  position: relative;
+  font-family: ${_var.$titleFont};
+  font-size: 1.1rem;
+  color: ${_var.$red800};
+  text-align: center;
+  padding-top: 2rem;
 `
 
 const StartBtn = styled.div.attrs({

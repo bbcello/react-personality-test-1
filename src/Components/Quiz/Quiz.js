@@ -27,9 +27,13 @@ const AnswerOptionUl = styled.ul.attrs({
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-start;
   flex-grow: 1;
+
+  @media (min-width: 812px) {
+    flex-direction: row;
+  }
 `
 
 

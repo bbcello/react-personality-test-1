@@ -12,13 +12,13 @@ import QuestionPage from './Pages/QuestionPage';
 class App extends Component {
   constructor(props) {
     super(props);
-    // initial state
     this.state = {
       showQuestionPage: false
     }
     this._onStartClick = this._onStartClick.bind(this);
   }
 
+  // animateOut
   animateOut() {
     setTimeout(() => anime({
       targets: '.intro .card',
@@ -54,7 +54,7 @@ class App extends Component {
 
   _onStartClick() {
     this.animateOut();
-    setTimeout(() => this.setState({showQuestionPage: !this.state.showQuestionPage}), 1500);
+    setTimeout(() => this.setState({showQuestionPage: !this.state.showQuestionPage}), 800);
   }
 }
 

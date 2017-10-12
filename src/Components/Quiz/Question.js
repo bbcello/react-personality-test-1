@@ -9,6 +9,11 @@ const Row = styled.div.attrs({
   className: 'row'
 })`
   margin: 1rem 0;
+
+  //laptop
+  @media (min-width: 1200px) {
+    margin: 3rem 0;
+  }
 `
 
 const Col = styled.div.attrs({

@@ -1,14 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+
+// include
 import _var from '../../Include/_var';
 
-
-const Col = styled.div.attrs({
-  className: 'question col'
-})`
-  padding: 1rem 0;
-`
 
 const AnswerOptionLi = styled.li.attrs({
   className: 'answerOption'

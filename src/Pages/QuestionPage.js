@@ -35,12 +35,14 @@ const CardRounded = styled.div.attrs({
   margin: 0 auto;
   box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
 
-  @media (min-width: 701px) {
-    width: 80%;
+
+  @media (min-width: 812px) {
+    width: 90%;
   }
 
-  @media (min-width: 955px) {
-    width: 50%;
+  // laptop
+  @media (min-width: 1200px) {
+    width: 60%;
   }
 `
 
@@ -136,7 +138,7 @@ class QuestionPage extends Component {
   handleAnswerSelected(event) {
     this.setUserAnswer(event.currentTarget.value);
     if (this.state.questionId < quizQuestions.length) {
-      setTimeout(() => this.setNextQuestion(), 800);
+      setTimeout(() => this.setNextQuestion(), 1000);
     } else {
       setTimeout(() => this.setBriggsResults(this.getBriggsResults()), 800);
       setTimeout(() => this.setColorsResults(this.getColorsResults()), 800);

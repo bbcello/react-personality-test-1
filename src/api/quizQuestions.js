@@ -9,15 +9,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "JP,Brown,D",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "JP,Brown,D,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -28,15 +28,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "SN,Green,C",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "SN,Green,C,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -47,15 +47,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "SN,Red,A",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "SN,Red,A,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -66,15 +66,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "JP,Brown,D",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "JP,Brown,D,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -85,15 +85,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "TF,Brown,C",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "TF,Brown,C,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -104,15 +104,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "EI,Green,C",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "EI,Green,C,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -123,15 +123,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "EI,Blue,B",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "EI,Blue,B,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -142,15 +142,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "EI,Blue,B",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "EI,Blue,B,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -161,15 +161,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "TF,Blue,B",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "TF,Blue,B,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -180,15 +180,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "JP,Red,A",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "JP,Red,A,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -199,15 +199,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "JP,Red,A",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "JP,Red,A,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -218,15 +218,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "SN,Brown,C",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "SN,Brown,C,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -237,15 +237,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "TF,Green,C",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "TF,Green,C,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -256,15 +256,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "TF,Blue,B",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "TF,Blue,B,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -275,15 +275,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "SN,Brown,D",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "SN,Brown,D,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -294,15 +294,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "JP,Red,A",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "JP,Red,A,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -313,15 +313,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "JP,Red,A",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "JP,Red,A,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -332,15 +332,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "JP,Green,D",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "JP,Green,D,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -351,15 +351,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "EI,Blue,B",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "EI,Blue,B,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -370,15 +370,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "EI,Blue,B",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "EI,Blue,B,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -389,15 +389,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "SN,Brown,A",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "SN,Brown,A,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -408,15 +408,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "SN,Brown,A",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "SN,Brown,A,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -427,15 +427,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "EI,Green,D",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "EI,Green,D,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -446,15 +446,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "EI,Green,C",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "EI,Green,C,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -465,15 +465,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "TF,Blue,B",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "TF,Blue,B,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -484,15 +484,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "SN,Red,A",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "SN,Red,A,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -503,15 +503,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "TF,Green,D",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "TF,Green,D,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -522,15 +522,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "SN,Red,A",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "SN,Red,A,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -541,15 +541,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "JP,Brown,D",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "JP,Brown,D,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -560,15 +560,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "TF,Blue,B",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "TF,Blue,B,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -579,15 +579,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "TF,Brown,C",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "TF,Brown,C,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -598,15 +598,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "EI,Green,C",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "EI,Green,C,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -617,15 +617,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "EI,Red,B",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "EI,Red,B,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -636,15 +636,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "SN,Green,C",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "SN,Green,C,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -655,15 +655,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "JP,Red,D",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "JP,Red,D,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -674,15 +674,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "TF,Red,A",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "TF,Red,A,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -693,15 +693,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "SN,Blue,D",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "SN,Blue,D,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -712,15 +712,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "TF,Blue,B",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "TF,Blue,B,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -731,15 +731,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "EI,Green,C",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "EI,Green,C,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
@@ -750,15 +750,15 @@ var quizQuestions = [
       {
         // briggs, color, letter
         type: "JP,Brown,D",
-        content: "Yep, That is so me!"
+        content: "OUI, THAT IS MOI!"
       },
       {
         type: " ",
-        content: "I have zero idea!"
+        content: "I HAVE NO IDEA!"
       },
       {
         type: "JP,Brown,D,No",
-        content: "Nah, That's sooo not me!"
+        content: "NAH, THAT CAN'T BE ME!"
       }
     ]
   },
