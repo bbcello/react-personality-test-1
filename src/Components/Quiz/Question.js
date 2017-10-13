@@ -2,23 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import _var from '../../Include/_var';
+
+// Variables
+const font = {
+  $titleFont: 'Ubuntu, sans-serif',
+  $mainFont: 'Raleway, sans-serif',
+  $latoFont: 'Lato, sans-serif' 
+}
 
 
-const Row = styled.div.attrs({
-  className: 'row'
-})`
+// styled-components
+const Row = styled.div`
   margin: 1rem 0;
 
-  //laptop
+  /* laptop */
   @media (min-width: 1200px) {
     margin: 3rem 0;
   }
 `
 
-const Col = styled.div.attrs({
-  className: 'question col'
-})`
+const Col = styled.div`
   padding: 1rem 0;
 `
 
@@ -26,17 +29,15 @@ const QuestionTitle = styled.h1.attrs({
   className: 'questionTitle'
 })`
   font-size: 1.3rem;
-  font-family: ${_var.$mainFont};
+  font-family: ${font.$mainFont};
   text-align: center;
 `
-// animation
-
 
 
 const Question = props => {
   return (
-    <Row>
-      <Col>
+    <Row className="row">
+      <Col className="col">
         <QuestionTitle>{props.content}</QuestionTitle>
       </Col>
     </Row>

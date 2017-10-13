@@ -2,28 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+
+// components
 import Question from './Question';
 import QuestionCount from './QuestionCount';
 import AnswerOption from './AnswerOption';
 
 
-const Wrap = styled.div.attrs({
-  className: 'wrap'
-})`
+// styled-components
+const Wrap = styled.div`
   margin: 1rem 1rem;
   z-index: 1;
 `
 
-const Row = styled.div.attrs({
-  className: 'row'
-})`
+const Row = styled.div`
   margin: 0;
 `
 
-const AnswerOptionUl = styled.ul.attrs({
-  className: 'answerOptions'
-})`
+const AnswerOptionUl = styled.ul`
   padding: 0;
+  padding-bottom: 1rem;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -34,9 +32,15 @@ const AnswerOptionUl = styled.ul.attrs({
   @media (min-width: 812px) {
     flex-direction: row;
   }
+
+  /* laptops */
+  @media (min-width: 1200px) and (max-width: 1600px)  {
+    padding-right: 1.5rem;
+  }
 `
 
 
+// components
 const Quiz = props => {
   const renderAnswerOptions = key => {
     return (
@@ -59,7 +63,7 @@ const Quiz = props => {
       <div className="w-100"></div>
       <Question content={props.question} />
       <div className="w-100"></div>
-      <Row>
+      <Row className="row">
         <AnswerOptionUl>
           {props.answerOptions.map(renderAnswerOptions)}
         </AnswerOptionUl>
@@ -69,6 +73,7 @@ const Quiz = props => {
 }
 
 
+// typechecking
 Quiz.PropTypes = {
   answer: PropTypes.string.isRequired,
   answerOptions: PropTypes.array.isRequired,

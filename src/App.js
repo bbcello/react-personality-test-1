@@ -54,7 +54,7 @@ class App extends Component {
 
   _onStartClick() {
     this.animateOut();
-    setTimeout(() => this.setState({showQuestionPage: !this.state.showQuestionPage}), 800);
+    setTimeout(() => this.setState({showQuestionPage: !this.state.showQuestionPage}), 1000);
   }
 }
 

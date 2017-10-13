@@ -1,20 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import _var from '../../Include/_var';
 
 
+// Variables
+const font = {
+  $titleFont: 'Ubuntu, sans-serif',
+  $mainFont: 'Raleway, sans-serif',
+  $latoFont: 'Lato, sans-serif' 
+}
+
+const colors = {
+  $colorBg: '#333',
+  $colorCardBg: '#302f34',
+  $colorGold: '#d4cd96'
+}
+
+
+// styled-components
 const ResultWrap = styled.div.attrs({
   className: 'Result'
 })`
   h1 {
-    color: ${_var.$teal800};
+    color: ${colors.$colorGold};
     font-size: 2rem;
-    font-family: ${_var.$titleFont};
+    font-family: ${font.$titleFont};
   }
 
   p {
-    font-family: ${_var.$mainFont};
+    font-family: ${font.$mainFont};
   }
 `
 

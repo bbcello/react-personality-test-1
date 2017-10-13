@@ -2,10 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-// include
-import _var from '../../Include/_var';
+
+// Variables
+const font = {
+  $titleFont: 'Ubuntu, sans-serif',
+  $mainFont: 'Raleway, sans-serif',
+  $latoFont: 'Lato, sans-serif' 
+}
+
+const colors = {
+  $colorBg: '#333',
+  $colorCardBg: '#302f34',
+  $colorGold: '#d4cd96'
+}
 
 
+// styled-components
 const AnswerOptionLi = styled.li.attrs({
   className: 'answerOption'
 })`
@@ -17,7 +29,8 @@ const Label = styled.label`
   padding-left: 3rem;
   line-height: 2.3rem;
   cursor: pointer;
-  font-family: ${_var.$mainFont};
+  font-family: ${font.$mainFont};
+  color: ${colors.$colorGold};
 
   &::before {
     content: '';
@@ -27,7 +40,7 @@ const Label = styled.label`
     display: block;
     width: 25px;
     height: 25px;
-    border: 2px solid ${_var.$teal800};
+    border: 2px solid ${colors.$colorGold};
     border-radius: 4px;
     z-index: -1;
   }
@@ -38,10 +51,7 @@ const Label = styled.label`
   }
 `
 
-const Input = styled.input.attrs({
-  type: 'radio',
-  name: 'radioGroup'
-})`
+const Input = styled.input`
   position: absolute;
   opacity: 0;
   z-index: -1;
@@ -59,11 +69,12 @@ const Input = styled.input.attrs({
     top: 0;
     width: 100%;
     height: 100%;
-    background: ${_var.$teal800};
+    background: ${colors.$colorGold};
   }
 `
 
 
+// return component AnswerOption
 const AnswerOption = props => {
   return (
     <AnswerOptionLi>
@@ -74,6 +85,7 @@ const AnswerOption = props => {
         name={props.answerType}
         disabled={props.answer}
         onChange={props.onAnswerSelected}
+        type="radio"
       />
       <Label className="radioCustomLabel" htmlFor={props.answerType}>
         {props.answerContent}

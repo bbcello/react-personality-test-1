@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import _var from '../Include/_var';
 
 // Components
 import Quiz from '../Components/Quiz/Quiz';
@@ -12,37 +11,79 @@ import Results from '../Components/Quiz/Results';
 import quizQuestions from '../api/quizQuestions';
 
 
+// Variables
+const colors = {
+  $colorBg: '#333',
+  $colorCardBg: '#302f34',
+  $colorGold: '#d4cd96'
+}
+
+
 // ===========================================================================================
 // Styles
 // ===========================================================================================
-const ContainerWrap = styled.div.attrs({
-  className: 'container questionPage'
-})`
+const Container = styled.div`
+  /* div */
   position: fixed;
   min-height: 100%;
   max-width: 100%;
-  background-color: ${_var.$blackBg};
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: ${colors.$colorBg};
 `
 
-const CardRounded = styled.div.attrs({
-  className: 'card rounded'
-})`
+const Card = styled.div`
+  /* div */
   position: relative;
   width: 100%;
   margin: 0 auto;
   box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
-
-
+  background: ${colors.$colorCardBg};
+  background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.3), transparent 1px, rgba(0, 0, 0, 0.3) 2px);
+  background-size: 3px 3px;
+  color: #fff;
+  
+  /* tablet */
   @media (min-width: 812px) {
     width: 90%;
   }
 
-  // laptop
+  /* laptop */
   @media (min-width: 1200px) {
     width: 60%;
+  }
+`
+
+const Corner = styled.div`
+  backface-visibility: hidden;
+  border-right: 2px solid #d4cd96;
+  border-top: 2px solid #d4cd96;
+  height: 12px;
+  position: absolute;
+  width: 12px;
+
+  &:nth-of-type(1) {
+    right: 5%;
+    top: 5%;
+  }
+
+  &:nth-of-type(2) {
+    left: 5%;
+    top: 5%;
+    transform: rotateZ(-90deg);
+  }
+
+  &:nth-of-type(3) {
+    bottom: 5%;
+    left: 5%;
+    transform: rotateZ(180deg);
+  }
+
+  &:nth-of-type(4) {
+    bottom: 5%;
+    right: 5%;
+    transform: rotateZ(90deg);
   }
 `
 
@@ -240,13 +281,17 @@ class QuestionPage extends Component {
   // render main
   render() {
     return (
-      <ContainerWrap>
-        <CardRounded>
+      <Container className="container">
+        <Card className="card">
+          <Corner className="corner" />
+          <Corner className="corner" />
+          <Corner className="corner" />
+          <Corner className="corner" />
           {this.state.resultBriggs 
           && this.state.resultColors
           && this.state.resultLetters ? this.renderResult() : this.renderQuiz()}
-        </CardRounded>
-      </ContainerWrap>
+        </Card>
+      </Container>
     );
   } // render()
 }
