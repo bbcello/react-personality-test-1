@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Quiz from '../Components/Quiz/Quiz';
 
 // Results
-import Results from '../Components/Quiz/Results';
+import Results from '../Components/Result/Results';
 
 // api
 import quizQuestions from '../api/quizQuestions';
@@ -20,7 +20,7 @@ const colors = {
 
 
 // ===========================================================================================
-// Styles
+// styled-components
 // ===========================================================================================
 const Container = styled.div`
   /* div */
@@ -91,7 +91,7 @@ const Corner = styled.div`
 // ===========================================================================================
 // Class Question Page
 // ===========================================================================================
-class QuestionPage extends Component {
+class Question extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -122,10 +122,9 @@ class QuestionPage extends Component {
       },
       resultBriggs: '',
       resultColors: '',
-      resultLetters: '',
+      resultLetters: ''
     };
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
-
   } // end - constructor()
 
   // populate app’s state using the componentWillMount life cycle event
@@ -179,7 +178,7 @@ class QuestionPage extends Component {
   handleAnswerSelected(event) {
     this.setUserAnswer(event.currentTarget.value);
     if (this.state.questionId < quizQuestions.length) {
-      setTimeout(() => this.setNextQuestion(), 1000);
+      setTimeout(() => this.setNextQuestion(), 800);
     } else {
       setTimeout(() => this.setBriggsResults(this.getBriggsResults()), 800);
       setTimeout(() => this.setColorsResults(this.getColorsResults()), 800);
@@ -248,11 +247,24 @@ class QuestionPage extends Component {
     }
   }
 
+  // getFinalColorsAnswerCount() {
+  //   const answersCount = this.state.answersCount;
+  //   const colorsAnswer = answersCount['Colors'];
+  //   const keys = Object.keys(colorsAnswer);
+  //   const values = Object.values(colorsAnswer);
+  //   const total = values.reduce((sum, value) => sum + value, 0);
+  //   const percentage = values.map(key => Math.round((key / total) * 100));
+
+  //   console.log(colorsAnswer);
+  //   console.log(total);
+  //   console.log(percentage);
+  // }
+
 
   // ===========================================================================================
-  // Render methods
+  // Render method
   // ===========================================================================================
-  
+
   // render quiz
   renderQuiz() {
     return (
@@ -270,10 +282,10 @@ class QuestionPage extends Component {
   // render result
   renderResult() {
     return (
-      <Results 
-        resultBriggs={this.state.resultBriggs}
+      <Results
         resultColors={this.state.resultColors}
         resultLetters={this.state.resultLetters}
+        resultBriggs={this.state.resultBriggs}
       />
     );
   } // renderResult()
@@ -296,4 +308,4 @@ class QuestionPage extends Component {
   } // render()
 }
 
-export default QuestionPage;
+export default Question;

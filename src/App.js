@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import anime from 'animejs';
 
-// CSS
-import './Styles/App.css';
-
 // Pages
 import Intro from './Pages/Intro';
-import QuestionPage from './Pages/QuestionPage';
+import QuestionPage from './Pages/Question';
 
 
 class App extends Component {
@@ -31,7 +28,7 @@ class App extends Component {
     return (
       <Intro 
         _onStartClick={this._onStartClick}
-        title={'Welcome To Personality Test'}
+        title='Welcome To Personality Test'
       />
     );
   }
