@@ -55,39 +55,6 @@ const Card = styled.div`
   }
 `
 
-const Corner = styled.div`
-  backface-visibility: hidden;
-  border-right: 2px solid #d4cd96;
-  border-top: 2px solid #d4cd96;
-  height: 12px;
-  position: absolute;
-  width: 12px;
-
-  &:nth-of-type(1) {
-    right: 5%;
-    top: 5%;
-  }
-
-  &:nth-of-type(2) {
-    left: 5%;
-    top: 5%;
-    transform: rotateZ(-90deg);
-  }
-
-  &:nth-of-type(3) {
-    bottom: 5%;
-    left: 5%;
-    transform: rotateZ(180deg);
-  }
-
-  &:nth-of-type(4) {
-    bottom: 5%;
-    right: 5%;
-    transform: rotateZ(90deg);
-  }
-`
-
-
 // ===========================================================================================
 // Class Question Page
 // ===========================================================================================
@@ -295,10 +262,6 @@ class Question extends Component {
     return (
       <Container className="container">
         <Card className="card">
-          <Corner className="corner" />
-          <Corner className="corner" />
-          <Corner className="corner" />
-          <Corner className="corner" />
           {this.state.resultBriggs 
           && this.state.resultColors
           && this.state.resultLetters ? this.renderResult() : this.renderQuiz()}

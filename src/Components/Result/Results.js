@@ -88,7 +88,7 @@ class Results extends React.Component {
       nextBtnShow: true,
       showColorsResult: true,
       showLettersResult: false,
-      showBriggsResult: false,
+      showBriggsResult: true,
       showReplayBtn: false
     }
   }

@@ -48,47 +48,14 @@ const Card = styled.div`
     width: 60%;
   }
 `
-
-const Corner = styled.div`
-  backface-visibility: hidden;
-  border-right: 2px solid #d4cd96;
-  border-top: 2px solid #d4cd96;
-  height: 12px;
-  position: absolute;
-  width: 12px;
-
-  &:nth-of-type(1) {
-    right: 5%;
-    top: 5%;
-  }
-
-  &:nth-of-type(2) {
-    left: 5%;
-    top: 5%;
-    transform: rotateZ(-90deg);
-  }
-
-  &:nth-of-type(3) {
-    bottom: 5%;
-    left: 5%;
-    transform: rotateZ(180deg);
-  }
-
-  &:nth-of-type(4) {
-    bottom: 5%;
-    right: 5%;
-    transform: rotateZ(90deg);
-  }
-`
-
 const Title = styled.h1`
   /* h1 */
   position: relative;
   font-family: ${font.$titleFont};
-  font-size: 1.1rem;
+  font-size: 2.5rem;
   color: ${colors.$colorGold};
   text-align: center;
-  padding-top: 2.5rem;
+  padding-top: 15rem;
 
 
   @media (min-width: 1200px) {
@@ -177,15 +144,11 @@ const Intro = ({title, _onStartClick}) => {
   return (
     <Container className="container intro">
       <Card className="card">
-        <Corner className="corner"/>
-        <Corner className="corner"/>
-        <Corner className="corner"/>
-        <Corner className="corner"/>
         <Title>
-          {title}
+          <span> 돈BTI 테스트 </span>
         </Title>
         <StartBtn onClick={() => _onStartClick()}>
-          <span>Let's Do This!</span>
+          <span>테스트 시작!</span>
           <div className="icon">
             <i className="fa fa-arrow-right"></i>
           </div>
